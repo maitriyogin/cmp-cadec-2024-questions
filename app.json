@@ -1,14 +1,14 @@
 {
     "name": "Remix on heroku",
-    "description": "A sample app showing remix on heroku with postgres",
+    "description": "Remix questions app",
     "keywords": [
         "react",
         "remix",
         "postgres"
 
     ],
-    "website": "https://github.com/TerribleDev/remix-heroku",
-    "repository": "https://github.com/TerribleDev/remix-heroku.git",
+    "website": "https://git.heroku.com/cmp-cadec-2024-questions",
+    "repository": "https://git.heroku.com/cmp-cadec-2024-questions.git",
     "success_url": "/",
     "scripts": {},
     "formation": {

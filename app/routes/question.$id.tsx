@@ -1,11 +1,11 @@
-import type { Questions } from "@prisma/client";
+import type { questions } from "@prisma/client";
 import { ActionFunction, json, type LoaderFunction } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
 import { speakers } from "~/data/Speakers";
 
 import { db } from "~/utils/db.server";
 
-type LoaderData = { question: Questions | null };
+type LoaderData = { question: questions | null };
 export const loader: LoaderFunction = async ({ request, params }) => {
   const id = Number(params?.id ?? 1);
   await db.questions.findUnique({ where: { id } });

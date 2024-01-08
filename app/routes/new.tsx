@@ -1,4 +1,3 @@
-import type { Questions } from "@prisma/client";
 import type { ActionFunction } from "@remix-run/node";
 import { redirect } from "@remix-run/node";
 

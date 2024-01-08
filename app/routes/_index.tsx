@@ -1,11 +1,11 @@
-import type { Questions } from "@prisma/client";
+import type { questions } from "@prisma/client";
 import { ActionFunction, LoaderFunction, redirect } from "@remix-run/node";
 import { json } from "@remix-run/node";
 import { Form, Link, useLoaderData } from "@remix-run/react";
 
 import { db } from "~/utils/db.server";
 
-type LoaderData = { questions: Array<Questions> };
+type LoaderData = { questions: Array<questions> };
 
 export const action: ActionFunction = async ({ request }) => {
   const form = await request.formData();
@@ -30,7 +30,7 @@ export const loader: LoaderFunction = async () => {
   };
   return json(data);
 };
-export default function Index() {
+export default function _index() {
   const data = useLoaderData<LoaderData>();
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}>
