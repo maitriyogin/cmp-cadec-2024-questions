@@ -17,7 +17,7 @@ model questions {
   votes Int
   user Int
   talkId Int
-  ok Boolean
+  allowed Boolean
 }
 model features{
   id      Int      @id @default(autoincrement())
