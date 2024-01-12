@@ -11,8 +11,7 @@
     "start":"remix-serve ./build/index.js",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate deploy",
-    "typecheck": "tsc",
-    "heroku-postbuild": "npm install && npm run build"
+    "typecheck": "tsc"
   },
   "dependencies": {
     "@remix-run/css-bundle": "^2.4.1",
@@ -40,7 +39,7 @@
     "typescript": "^5.1.6"
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": "20.x"
   },
   "prisma": {
     "seed": "node --require esbuild-register prisma/seed.ts"
