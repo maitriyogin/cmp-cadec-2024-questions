@@ -8,7 +8,8 @@
   "scripts": {
     "build": "remix build",
     "dev": "remix dev --manual",
-    "start":"remix-serve ./build/index.js",
+    "start:b":"remix-serve ./build/index.js",
+    "start":"npm run build & npm run start:b",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate deploy",
     "typecheck": "tsc"
