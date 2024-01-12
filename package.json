@@ -8,11 +8,11 @@
   "scripts": {
     "build": "remix build",
     "dev": "remix dev --manual",
-    "start:b":"remix-serve ./build/index.js",
-    "start":"npm run build & npm run start:b",
+    "start":"remix-serve ./build/index.js",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate deploy",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "heroku-postbuild": "npm install && npm run build"
   },
   "dependencies": {
     "@remix-run/css-bundle": "^2.4.1",
